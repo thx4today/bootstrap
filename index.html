@@ -18,43 +18,43 @@
 		.mb-50{margin-bottom: 50px;}
 		.contentimg>img{width: 100%;}
 	</style>
-<!-- 	<script>
+	<script>
 		$(window).scroll(function(){
-			var st=$(this).scrollTop();
-			var note = $(".move1st").offset().top;
-			console.log(st+"/"+note);
-			var m1=$(".move1st")
-			if(st>note-400){
-				m1.addClass("animate");
+			var st= $(this).scrollTop();
+
+			console.log(st);
+			var m1 = $(".menu-top");
+			if(st>400){
+				m1.addClass("fixed-top");
 			}else{
-				m1.removeClass("animate");
+				m1.removeClass("fixed-top");
 			}
 		});
-	</script> -->
+	</script>
 </head>
 <body>
 	
-<div class="bg-primary fixed-top">
+<div class="bg-primary menu-top">
 	<div class="container">
 		<nav class="navbar navbar-expand-lg navbar-primary bg-primary">
 		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
-		  <a class="navbar-brand" href="#!">LOGO</a>
+		  <a class="navbar-brand text-white" href="#!">LOGO</a>
 		
 		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 		    <ul class="navbar-nav ml-auto mt-2 mt-md-0">
 		      <li class="nav-item">
-		        <a class="nav-link" href="#!">MENU01</a>
+		        <a class="nav-link text-white" href="#!">MENU01</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#!">MENU02</a>
+		        <a class="nav-link text-white" href="#!">MENU02</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#!">MENU03</a>
+		        <a class="nav-link text-white" href="#!">MENU03</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#!">MENU04</a>
+		        <a class="nav-link text-white" href="#!">MENU04</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -62,16 +62,18 @@
 	</div>
 </div>
 
-<div class="jumbotron bg-top d-flex align-items-center flex-column text-white text-center">
-  <h1 class="mt-50 mb-50">Hello, world!</h1>
-  <p class="mb-50">This is a simple hero unit, a simple jumbotron-style component for<br>calling extra attention to featured content or information.</p>
-    <a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
-  </p>
-  <p>
-  	<img src="images/drop-icon.png" alt="">
-  </p>
-  <p>It uses utility classes for typography and<br>
-     spacing to space content out within the larger container.</p>
+<div class="jumbotron bg-top d-flex align-items-center justify-content-center text-white text-center">
+ <div class="container bg-primary">
+ 	 <h1 class="mb-50">Hello, world!</h1>
+ 	<p class="mb-50">This is a simple hero unit, a simple jumbotron-style component for<br>calling extra attention to featured content or information.</p>
+ 	  <a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
+ 	</p>
+ 	<p>
+ 		<img src="images/drop-icon.png" alt="">
+ 	</p>
+ 	<p>It uses utility classes for typography and<br>
+ 	   spacing to space content out within the larger container.</p>
+ </div>
 </div>
 <div style="background-color: #F0F1F4;" class="d-flex align-items-center pt-3 pb-3">
 	<div class="container ">
