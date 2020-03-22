@@ -1,10 +1,10 @@
 @charset "utf-8"
-
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body{font-family: 'Noto Sans KR', sans-serif!important;}
 
 .warp{}
 /*header*/
-	#header{margin-left: 70px;}
+	#header{margin-left: 70px;height: 100px;}
 /*aside*/
 	.area_sns{
 		height: 927px;
@@ -80,6 +80,13 @@ body{font-family: 'Noto Sans KR', sans-serif!important;}
 	.jumbotron {padding: 0!important;}
 		.video{width: 100%;height: 716px;}
 		.video #myVideo{width: 100%; height: 100%;}
+		.colorbox{
+			position: absolute;
+			top: 100px;
+			right: 0;
+			width: 35%;
+			height: 716px;
+			background-image: -webkit-linear-gradient(-40deg, #FF1A00 35%, #fff);}
 	.contant{margin-bottom: 2rem;}
 	.contant #notice{position: relative;}
 	.contant #notice h5{margin-bottom: 1em;}
