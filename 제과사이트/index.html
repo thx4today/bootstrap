@@ -8,29 +8,34 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="warp">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<!-- header -->
+	<header id="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		<a class="navbar-brand" href="#">
+			<img style="width: 90px;"src="img/logo.png" alt="">
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 		    	<li class="nav-item active">
-		        	<a class="nav-link" href="#">Home 
-		        		<span class="sr-only">(current)</span>
-		        	</a>
+		        	<a class="nav-link" href="#">회사소개</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="#">Link</a>
+		        	<a class="nav-link" href="#">제품안내</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link disabled" href="#">Disabled</a>
+		        	<a class="nav-link" href="#">홍보센터</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#">고객문의</a>
 		      	</li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
@@ -41,18 +46,68 @@
 		    </form>
 		</div>
 		</nav>
+	</header>
+	<aside class="area_sns">
+		<ul>
+			<li><a href="https://www.facebook.com/" data-sns="face"></a></li>
+			<li><a href="https://www.facebook.com/" data-sns="insta"></a></li>
+			<li><a href="https://blog.naver.com/zikimi29" data-sns="blog"></a></li>
+			<li><a href="https://www.youtube.com/channel/UC_Xwt7jqHTlEPj6IEDkgnaw?view_as=subscriber" data-sns="youtube"></a></li>
+		</ul>
+		<span class="scroll">
+			<span>scroll</span>
+			<i></i>
+		</span>
+	</aside>
 		<div class="jumbotron jumbotron-fluid">		
 			<div class="video">
-				<video id="myVideo" autoplay muted data-autoplay>
+				<video id="myVideo" autoplay data-autoplay muted>
 					<source src="img/video.mp4">
 				</video>
-			</div>
-		<div class="d-flex text-white mt-1">
-			<div class="p-2 flex-sm-grow-1 bg-danger">Flex item</div>
-			<div class="p-2 flex-md-grow-1 bg-warning">Flex item</div>
-			<div class="p-2 flex-lg-grow-1 bg-danger">Flex item</div>
-			<div class="p-2 flex-xl-grow-1 bg-warning">Flex item</div>
+			</div>			
 		</div>
+		<div class="contant container">
+			<div id="notice">
+				<div class="card-group">
+					<div class="card col-3 col-md-3 bg-primary">
+						<div class="card-body text-left">
+							<p class="card-text">동서소식</p>
+						</div>
+					</div>
+					<div class="card col-9 col-md-3 bg-warning">
+						<div class="card-body text-left">
+							<h5>동서식품, 설 맞이 명절음식 나눔 봉사 펼쳐</h5>
+							<p class="card-text">21일, 임직원 30여명 서울 종로구 창신동 쪽방상담소 방문해 명절음식 나눔 봉사활동 전개</p>
+							<i>2020-01-30</i>
+						</div>
+					</div>
+					<div class="card col-9 col-md-3 bg-success">
+						<div class="card-body text-left">
+							<h5>동서, 연말 맞아 이웃돕기 성금 5억5천만원 기탁</h5>
+							<p class="card-text">㈜동서·동서식품, 성금 총 5억5천만원 사회복지공동모금회, 초록우산어린이재단, 한국여성재단에 기탁, 따스한 사랑나눔 실천</p>
+							<i>2019-12-23</i>
+						</div>
+					</div>
+					<div class="card col-9 col-md-3 bg-danger">
+						<div class="card-body text-left">
+							<h5>동서식품, ‘제21회 맥심커피배 입신최강전’ 개최</h5>
+							<p class="card-text">전기 우승자 신진서 9단 등 국내 유수 프로 바둑기사 참석한 가운데 대진추첨식 진행</p>
+							<i>2019-12-23</i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- footer -->
+	<div style="background-color: #313340">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-white pt-3 pb-3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quisquam accusantium explicabo deserunt culpa, veniam velit, error harum fuga illo.
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

@@ -1,1 +1,86 @@
 @charset "utf-8"
+
+body{font-family: 'Noto Sans KR', sans-serif!important;}
+
+.warp{}
+/*header*/
+	#header{margin-left: 70px;}
+/*aside*/
+	.area_sns{
+		height: 927px;
+		transition: 0.5s;
+		position: absolute;
+		top: 0;left: 0;
+		z-index: 90;
+		width: 70px;
+		background-color: #fff;
+	}
+	.area_sns ul{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.area_sns ul li > a{
+		display: block;
+		position: relative;
+		width: 23px;
+		height: 23px;
+		margin: 0 auto;
+		text-indent: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		margin-bottom: 1em;
+	}
+	.area_sns ul li > a[data-sns="face"]:before {
+	    background-position-x: 0;
+	}
+	.area_sns ul li > a[data-sns="insta"]:before {
+	    background-position-x: -23px;
+	}
+	.area_sns ul li > a[data-sns="blog"]:before {
+	    background-position-x: -46px;
+	}
+	.area_sns ul li > a[data-sns="youtube"]:before {
+	    background-position-x: -69px;
+	}
+	.area_sns ul li > a:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/sp_com.png);
+		background-repeat: no-repeat;
+		background-position-y: 0;
+	}
+	.area_sns .scroll {
+		position: absolute;
+		left: 50%;
+		bottom: 0px;
+		margin-left: -23px;
+	}
+	.area_sns .scroll span {
+		display: block;
+		margin-bottom: 40px;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+		transform: rotate(-90deg);
+	}
+	.area_sns .scroll i {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		width: 1px;
+		height: 140px;
+		margin: 0 auto;
+		background: rgba(210,212,201,0.7);
+	}
+	.jumbotron {padding: 0!important;}
+		.video{width: 100%;height: 716px;}
+		.video #myVideo{width: 100%; height: 100%;}
+	.contant{margin-bottom: 2rem;}
+	.contant #notice{position: relative;}
+	.contant #notice h5{margin-bottom: 1em;}
+	.contant #notice i{position: absolute;bottom: 0;}

@@ -6,10 +6,10 @@
 
 /* reset */
 body,p,div,span,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0; padding:0;}
-*[lang="ko"] body, *[lang="ko"] input, *[lang="ko"] textarea, *[lang="ko"] button, *[lang="ko"] select{font-family:'Montserrat', 'Noto Sans KR' , '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif; color:#444;}
+/*[lang="ko"] body, *[lang="ko"] input, *[lang="ko"] textarea, *[lang="ko"] button, *[lang="ko"] select{font-family:'Montserrat', 'Noto Sans KR' , '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif; color:#444;}
 *[lang="en"] body, *[lang="en"] input, *[lang="en"] textarea, *[lang="en"] button, *[lang="en"] select{font-family:'Montserrat', 'Noto Sans KR' , '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif; color:#444;}
 *[lang="jp"] body, *[lang="jp"] input, *[lang="jp"] textarea, *[lang="jp"] button, *[lang="jp"] select{font-family:'Montserrat', 'Noto Sans JP' , 'Yu Gothic', 'ＭＳ ゴシック', Sans-serif; color:#444;}
-*[lang="zh-cn"] body, *[lang="zh-cn"] input, *[lang="zh-cn"] textarea, *[lang="zh-cn"] button, *[lang="zh-cn"] select{font-family:'Montserrat', 'Noto Sans SC' , 'microsoft yahei ui', 'microsoft yahei', simsun , Sans-serif; color:#444;}
+*[lang="zh-cn"] body, *[lang="zh-cn"] input, *[lang="zh-cn"] textarea, *[lang="zh-cn"] button, *[lang="zh-cn"] select{font-family:'Montserrat', 'Noto Sans SC' , 'microsoft yahei ui', 'microsoft yahei', simsun , Sans-serif; color:#444;}*/
 body{font-size:15px;}
 h1,h2,h3,h4,h5,h6,input,textarea,button,select,table{font-size:1em;}
 img, fieldset, button{border:0;}
