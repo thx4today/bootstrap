@@ -1,3 +1,10 @@
+.area_visual em[data-visual-title]{opacity:0; visibility:hidden; transition:all 0.5s ease;}
+.area_visual em[data-visual-title].active{opacity:1; visibility:visible;}
+.area_visual em[data-visual-title] .wordAni{opacity:0; display:block; transition:all 0.5s ease;}
+.area_visual em[data-visual-title].active .wordAni.active{opacity:1;}
+.area_visual .area_link_open{opacity:0; visibility:hidden; position:absolute; top:50%; left:45%; z-index:20; transform:translateY(-70%); transition:all 0.3s ease 0s;}
+.
+
 https://hackerthemes.com/bootstrap-cheatsheet/#flex-grow-1
 
 1. 회사소개 / 2. 제품안내 /3. 홍보센터(공지사항)/4. 고객의소리   (회원가입 / 로그인 / 검색)
@@ -15,8 +22,6 @@ style guid
 
 #FF1A00 (255 26 0)/ RED
 #FFDB3F (255 219 63)/ YELLOW
-#204270 (32 66 112)/ BLUE
-#598D42 (89 141 66) / GREEN
 #313340 (49 51 64) / BLACK
 #EFEFEF (239 239 239) / WHITE
 
