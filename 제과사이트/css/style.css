@@ -135,7 +135,7 @@ body{font-family: 'Noto Sans KR', sans-serif!important;}
 			background-color: #fff;
 			color: #313340;
 		}
-/*contant*/
+/*content*/
 	.h_390{margin-bottom: 2rem;height: 390px;}
 	.hauto{margin-bottom: 2rem;height: auto;}
 		.notice{position: relative;height: 100%;}
@@ -223,7 +223,7 @@ body{font-family: 'Noto Sans KR', sans-serif!important;}
 	.colorbox .imgp01{left: 50%;transform: translateX(-50%);}
 	.colorbox .imgbtn{bottom: 20%;left: 50%;transform: translateX(-50%);}
 
-	.contant{height: auto;}
+	.content{height: auto;}
 	.notice h2,	.notice p, .notice .btn{display: none;}
 }
 
