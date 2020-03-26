@@ -70,24 +70,15 @@
 
 		var h_390 = $(".h_390").offset().top;
 		var visual = $(".visual").offset().top;
-		//console.log(asideB)
-		
-		
-		
-				
-		
-					//마우스크롤로 페이지 넘기는 기능
-			$(window).mousewheel(function(event,delta){
-				if(delta<0){
-					$("html,body").stop().animate({scrollTop: h_390}, 500);
-				}
-				if(delta>0){
-					$("html,body").stop().animate({scrollTop: 0}, 500);
-				}
-			});
-
-
-		
+		//마우스크롤로 페이지 넘기는 기능
+		$(window).mousewheel(function(event,delta){
+			if(delta<0){
+				$("html,body").stop().animate({scrollTop: h_390}, 500);
+			}
+			if(delta>0){
+				$("html,body").stop().animate({scrollTop: 0}, 500);
+			}
+		});		
 	});
 
 	</script>
