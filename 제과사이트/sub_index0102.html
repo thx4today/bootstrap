@@ -14,74 +14,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="js/jquery.mousewheel.min.js"></script>
-	<style>
-		.slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    background:#f00;
-}
-	</style>
-				
-	<script>
-		$(function(){
-			$('.slider').slick({
-			  dots: false,
-				  autoplay:false,
-					speed: 300,
-				  slidesToShow: 2,
-				  slidesToScroll: 2,
-				  arrows:true,
-				  nextArrow: $(".next_btn"),
-				  prevArrow: $(".prev_btn"),
-				  responsive: [
-				    {
-				      breakpoint: 1920,
-				      settings: {
-				        slidesToShow: 2,
-				        slidesToScroll: 2,
-				        infinite: true,
-				        dots: false
-				      }
-				    },
-				    {
-				      breakpoint: 959,
-				      settings: {
-				        slidesToShow: 2,
-				        slidesToScroll: 2
-				      }
-				    },
-				    {
-				      breakpoint: 699,
-				      settings: {
-				        slidesToShow: 1,
-				        slidesToScroll: 1
-				      }
-				    },
-					  ]
-			});
-
-		var h_390 = $(".h_390").offset().top;
-		var visual = $(".visual").offset().top;
-		//마우스크롤로 페이지 넘기는 기능
-		$(window).mousewheel(function(event,delta){
-			if(delta<0){
-				$("html,body").stop().animate({scrollTop: h_390}, 500);
-			}
-			if(delta>0){
-				$("html,body").stop().animate({scrollTop: 0}, 500);
-			}
-		});		
-	});
-
-	</script>
 </head>
 <body>
 	<div class="warp">
@@ -89,7 +21,7 @@
 		<header id="header">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light bg-white">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.html">
 					<img style="width: 90px;"src="img/logo.png" alt="">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,27 +32,27 @@
 		    		<li class="nav-item dropdown">
 		        	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">회사소개</a>
 				      <div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">동서식품</a>
-				        <a class="dropdown-item" href="#">식품안전센터</a>
+				        <a class="dropdown-item" a href="sub_index0101.html">동서식품</a>
+				        <a class="dropdown-item"  a href="sub_index0102.html">식품안전센터</a>
 				      </div>
 		      	</li>
 		      	<li class="nav-item dropdown">
-		        	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">제품안내</a>
+		        	<a class="nav-link dropdown-toggle"  a href="sub_index0201.html" id="navbardrop" data-toggle="dropdown">제품안내</a>
 				      <div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">포스트</a>
-				        <a class="dropdown-item" href="#">브랜드</a>
+				        <a class="dropdown-item"  a href="sub_index0201.html">포스트</a>
+				        <a class="dropdown-item"  a href="sub_index0202.html">브랜드</a>
 				      </div>
 		      	</li>
 		      	<li class="nav-item dropdown">
-		        	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">홍보센터</a>
+		        	<a class="nav-link dropdown-toggle"  a href="sub_index0301.html" id="navbardrop" data-toggle="dropdown">홍보센터</a>
 				      <div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">공지사항</a>
-				        <a class="dropdown-item" href="#">이벤트</a>
+				        <a class="dropdown-item"  a href="sub_index0301.html">공지사항</a>
+				        <a class="dropdown-item"  a href="sub_index0302.html">이벤트</a>
 				      </div>
 		      	</li>
-		      	<li class="nav-item dropdown">
-		        	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">고객문의</a>
-		      	</li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="sub_index0401.html">고객문의</a>
+			      </li>
 				  </ul>
 				 <form class="form-inline my-2 my-lg-0">
 				    	<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -131,7 +63,8 @@
 				</div>
 				</nav>
 			</div>
-		</header>
+		</header>		
+		<!-- //header -->
 		<aside class="area_sns d-none d-lg-block">
 			<ul>
 				<li><a href="https://www.facebook.com/" data-sns="face"></a></li>
@@ -156,9 +89,10 @@
 			</div>
 		</div>
 		<!-- //sub visual -->
-		<div style="border-bottom: 1px solid #ccc;">
+		<!-- lnb -->
+		<div style="border-bottom: 1px solid #ccc;" class="mb-5">
 			<div class="container p-0">
-					<!-- lnb -->
+
 					<div class="area_lnb">
 						<ul class="clearfix">
 							<li><a href="sub_index0101.html">동서식품</a></li>
@@ -167,35 +101,15 @@
 					</div>
 			</div>
 		</div>
-		<div class="subWrap">
-			<div class="container">
-				<!-- lnb -->
-				<div class="area_lnb mb-5">
-					<ul class="clearfix">
-						<li><a href="sub_index0101.html">동서식품</a></li>
-						<li class="active"><a href="sub_index0102.html">식품안전센터</a></li>
-					</ul>
-				</div>
-				<!-- //lnb -->
-				<!-- 		<script type="text/javascript">
-					$(".gnb > li > a").removeClass("on");
-					$("#construct").addClass("on");
-					$(".construct_"+"sub01").addClass("on");
-					$(".construct_"+"").addClass("on");
-					$(".construct_" + "").addClass("on");
-					$(".construct_" + "").addClass("on");
-				</script> -->
-				<section id="container">
-					<!-- 본문 -->
-					<div class="inr">
-						<h2>식품안전센터</h2>
-						<div class="company">
-							<img src="img/company02.jpg" alt="">
-						</div>
-					</div>
-				</section>
+		<!-- //lnb -->
+		<!-- 본문 -->
+		<div class="subWrap container">
+			<h2 style="font-size: 34px;" class="mb-5 text-center">식품안전센터</h2>
+			<div class="sub_content">
+				<img src="img/company02.jpg" alt="" class="w-100">
 			</div>
 		</div>
+		<!-- //본문 -->
 		<!-- footer -->
 		<div class="footer"style="background-color: #313340">
 			<div class="container">

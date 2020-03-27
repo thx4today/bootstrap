@@ -244,6 +244,27 @@ body{font-family: 'Noto Sans KR', sans-serif!important;}
 	height: 360px;
 	margin-bottom: 0;
 }
+.area_subVisual.sub02{	
+	background: url(../img/bg_02.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 360px;
+	margin-bottom: 0;
+}
+.area_subVisual.sub03{	
+	background: url(../img/bg_03.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 360px;
+	margin-bottom: 0;
+}
+.area_subVisual.sub04{	
+	background: url(../img/bg_04.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 360px;
+	margin-bottom: 0;
+}
 	.txt{		
 		width: 40%;
 		height: 200px;
@@ -259,9 +280,6 @@ body{font-family: 'Noto Sans KR', sans-serif!important;}
 .area_lnb{
 	width: 100%;
 	height: 80px;
-	border-bottom:1px solid #ccc !important;
-}
-.area_lnb ul{
 }
 .area_lnb ul li{
 	float:left;
@@ -277,19 +295,30 @@ body{font-family: 'Noto Sans KR', sans-serif!important;}
 	font-size: 17px;
 }
 .area_lnb ul li.active{
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #313340;
 }
 .area_lnb ul li.active a{
 	color: #313340;
+	font-weight: 700;
 }
-section#container{}
-	.inr{}
-	.inr h2{
-		font-size: 38px;
-		text-align: center;
-	}
-	.company{}
-	.company img{width: 100%;}
-/*//sub*/
 
+.subWrap{}
+.subWrap h2{}
+	/*.row{}*/
+		.card{overflow: hidden;margin-bottom: 30px;cursor: pointer;}
+		.card img.card-img-top{transition: .3s;}
+		.card:hover .card-img-top{transform: scale(1.1);}
+		.drowborder{
+			display: block;
+			position: absolute;
+			transition:all .2s;
+			background: #FF1A00;
+			z-index: 999;
+		}
+		.drowborder.top{top: 0px;height: 1px;width: 0;}
+		.drowborder.right{top: 0;right: 0;width: 1px;height: 0;}
+		.drowborder.bottom{bottom: 0;right: 0;height: 1px;width: 0;}
+		.drowborder.left{bottom: 0;left: 0;width: 1px;height: 0;}
+
+/*//sub*/
 
